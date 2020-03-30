@@ -1,0 +1,30 @@
+
+.skillSearch {
+    font-size: 1px;
+    color: transparent;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25% auto;
+    width: 75vw;
+    height: 50vh;
+    & > i {
+        font-size: 5vw;
+        margin: 10px;
+     }
+    // margin-top: 10vh;
+}
+
+@media screen and (max-width: 600px) {
+    .skills {
+        margin-top: 40px;
+        max-height: 90vh;
+        & > i {
+            font-size: 10vw;
+        }
+    }
+}

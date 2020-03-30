@@ -1,0 +1,47 @@
+.navWrapper {
+    & > .icon {
+        display: none;
+       
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .navWrapper {
+        & > .link:not(:first-child) {
+            display: none;                                           // Use this for logo linking to homepage
+        }
+        & > .themeBtn {
+            display: none;
+        }                                   
+        & > .icon {
+            display: block;
+            margin-left: auto;
+            float: left;
+            right: 10px;
+            top: 10px;
+            & > .fa-bars {
+                font-size: 40px;
+            }
+        }
+        
+    }
+
+    .responsive {
+        position: relative;
+        & > .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        & > .link {
+            
+            display: block;
+            text-align: left;
+        }
+        & > .response {
+            display: block;
+            text-align: left;
+        }
+    }
+}
